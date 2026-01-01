@@ -180,7 +180,6 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs
 from sklearn.model_selection import train_test_split
 
-# cluster_std 3.0
 X, y = make_blobs(n_samples=200,centers=2,cluster_std=2.0, random_state=42)
 
 y = np.where(y == 0, -1, 1)
@@ -232,5 +231,6 @@ plt.plot(x1, x2_positive, 'r--', label='Margin +1')
 plt.plot(x1, x2_negative, 'b--', label='Margin -1')
 
 plt.legend()
+
 
 plt.show()
